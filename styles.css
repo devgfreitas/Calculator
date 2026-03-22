@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    background-color: #FFF5EE;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    font-family: 'Bungee', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #8F9EE0;
+    margin-bottom: 25px;
+}
+
+.calculadora-box {
+    background-color: #C0C0C0;
+    width: 100%;
+    max-width: 450px;
+    height: 650px;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000000;
+    box-shadow: -14px 15px 0 #C0C0C0, -16px 17px 0 #000000;
+}
+
+.visor {
+    width: 100%;
+    max-width: 400px;
+}
+
+.visor input {
+    min-width: 100%;
+    height: 100px;
+    border-radius: 25px;
+    border: 0;
+    background-color: #FFFFFF;
+    margin: 25px 0;
+    text-align: end;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-top: 4px solid #000000;
+    border-right: 4px solid #000000;
+}
+
+.botoes {
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.botao-zero {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.botoes button {
+    height: 80px;
+    border-radius: 25px;
+    background-color: #8F9EE0;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    border: 2px solid #000000;
+    cursor: pointer;
+    transition: 0.1s;
+    box-shadow: -2px 3px 0 #8F9EE0, -4px 5px 0 #000000;
+}
+
+.botoes button:hover {
+    background-color: #7a8bcf;
+    border-top: 4px solid #000000;
+    border-right: 4px solid #000000;
+    border-bottom: 2px solid #000000;
+    border-left: 2px solid #000000;
+    color: #dadada;
+    box-shadow: none;
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 550px) {
+    .container h1 {
+        font-size: 29px;
+    }
+
+    .calculadora-box {
+        width: 80%;
+        height: 550px;
+    }
+
+    .visor {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .visor input {
+        width: 100%;
+    }
+
+    .botoes button {
+        height: 60px;
+        border-radius: 17px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container h1 {
+        font-size: 25px;
+    }
+
+    .calculadora-box {
+        width: 85%;
+        height: 500px;
+    }
+
+    .visor input {
+        height: 80px;
+    }
+
+    .botoes button {
+        height: 55px;
+    }
+}
+
+@media (max-width: 355px) {
+    .container h1 {
+        font-size: 20px;
+    }
+
+    .visor input {
+        height: 75px;
+    }
+
+}
