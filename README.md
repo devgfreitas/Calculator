@@ -20,10 +20,8 @@ This project performs basic mathematical operations and percentage calculations,
 ## 📸 Preview
 
 <p align="center">
-  <img src="https://devgfreitas.github.io/Calculator" />
+  <img src="calculator-img" />
 </p>
-
-> 💡 Tip: Replace this image with a screenshot or GIF of your project.
 
 ---
 
