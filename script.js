@@ -33,7 +33,7 @@ function result() {
         let resultado = eval(visor.value);
         visor.value = resultado;
     } catch {
-        visor.value = "Error in calculation";
+        visor.value = "Conta já cadastrada";
     }
     
 }
