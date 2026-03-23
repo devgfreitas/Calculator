@@ -19,7 +19,7 @@ function percent() {
         porcentagem = porcentagem / 100;
         visor.value = porcentagem; 
     } catch {
-        visor.value = "Conta já cadastrada";
+        visor.value = "Error in calculation";
     }
     
 }
@@ -33,7 +33,7 @@ function result() {
         let resultado = eval(visor.value);
         visor.value = resultado;
     } catch {
-        visor.value = "Conta já cadastrada";
+        visor.value = "Error in calculation";
     }
     
 }
