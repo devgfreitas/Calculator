@@ -13,7 +13,7 @@ This project performs basic mathematical operations and percentage calculations,
 
 ## 🚀 Live Demo
 
-👉 https://devgfreitas.github.io/Calculadora-Funcional/
+👉 https://devgfreitas.github.io/Calculator/
 
 ---
 
