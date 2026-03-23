@@ -20,7 +20,7 @@ This project performs basic mathematical operations and percentage calculations,
 ## 📸 Preview
 
 <p align="center">
-  <img src="calculator-img" />
+  <img src="calculator-img.png" />
 </p>
 
 ---
