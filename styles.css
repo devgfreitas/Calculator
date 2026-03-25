@@ -96,6 +96,7 @@ body {
     border-left: 2px solid #000000;
     color: #dadada;
     box-shadow: none;
+    transform: translateX(-4px);
 }
 
 
