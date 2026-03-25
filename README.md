@@ -1,4 +1,4 @@
-# 🧮 Functional Calculator
+# 🧮 Custom Logic Calculator
 
 <p align="center">
   <img src="https://img.shields.io/badge/status-active-success?style=for-the-badge" />
@@ -7,7 +7,7 @@
 </p>
 
 A responsive web calculator built with **HTML, CSS, and JavaScript**.  
-This project performs basic mathematical operations and percentage calculations, created to strengthen **programming logic**, **DOM manipulation**, and **responsive design skills**.
+This project performs basic mathematical operations using a custom-built calculation logic without relying on eval()., created to strengthen **programming logic**, **DOM manipulation**, and **responsive design skills**.
 
 ---
 
@@ -31,7 +31,7 @@ This project performs basic mathematical operations and percentage calculations,
 - ➖ Subtraction  
 - ✖️ Multiplication  
 - ➗ Division  
-- 📊 Percentage calculation (e.g., 10% = 0.1)  
+- 🧠 Custom calculation logic (without eval)
 - 📱 Responsive layout  
 
 ---
@@ -41,7 +41,9 @@ This project performs basic mathematical operations and percentage calculations,
 - DOM manipulation with JavaScript  
 - Handling user input and calculations  
 - Building responsive layouts with CSS  
-- Structuring a real-world project  
+- Structuring a real-world project
+- Building a custom calculation engine without using eval()
+- Validating mathematical expressions manually
 
 ---
 
