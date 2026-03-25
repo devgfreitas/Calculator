@@ -14,7 +14,7 @@ function clean() {
 
 function separate() {
     let dadostela = visor.value;
-    return dadostela.match(/\d+|\+|\-|\*|\//g);
+    return dadostela.match(/\d+|\+|\-|\*|\/|\%/g);
 }
 
 function correctAccount() {
@@ -33,8 +33,9 @@ function correctAccount() {
 function resolution() {
     let contacorreta = correctAccount();
     let valorfinalmd = 0; /* Valor final da multiplicação ou divisão */
+    let valorfinalp = 0; /* Valor final da porcentagem */
     let valorfinalss = 0; /* Valor final da soma ou subtração */
-    let operadores = ['+', '-', '*', '/'];
+    let operadores = ['+', '-', '*', '/', '%'];
     let erro = false;
 
 
@@ -42,8 +43,13 @@ function resolution() {
             erro = true;
             visor.value = 'Error in calculation';
         } else if(operadores.includes(contacorreta[contacorreta.length - 1])) { /* Termina com um operador? */
-            erro = true;
-            visor.value = 'Error in calculation';
+            if(contacorreta[contacorreta.length - 1] == '%') {
+
+            } else {
+                erro = true;
+                visor.value = 'Error in calculation';
+            }
+            
     } else if(contacorreta == null || contacorreta.length == 0) {
             erro = true;
             visor.value = 'Error in calculation';
@@ -76,6 +82,21 @@ function resolution() {
                     valorfinalmd = contacorreta[i - 1] / contacorreta[i + 1];
                     contacorreta.splice(i - 1, 3, valorfinalmd);
                     i--;
+                }
+            }
+        }
+
+        /* Porcentagem */
+        for(let posicao = 0; posicao < contacorreta.length; posicao++) {
+            if(contacorreta[posicao] == '%') {
+                if(posicao >= 3) {
+                    valorfinalp = contacorreta[posicao - 3] * contacorreta[posicao - 1] / 100;
+                    contacorreta.splice(posicao - 1, 2, valorfinalp);
+                    posicao--;
+                } else {
+                    valorfinalp = contacorreta[posicao - 1] / 100;
+                    contacorreta.splice(posicao - 1, 2, valorfinalp);
+                    posicao--;
                 }
             }
         }
