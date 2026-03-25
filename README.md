@@ -7,7 +7,7 @@
 </p>
 
 A responsive web calculator built with **HTML, CSS, and JavaScript**.  
-This project performs basic mathematical operations using a custom-built calculation logic without relying on eval()., created to strengthen **programming logic**, **DOM manipulation**, and **responsive design skills**.
+This project performs basic mathematical operations using a custom-built calculation logic without relying on eval(), created to strengthen **programming logic**, **DOM manipulation**, and **responsive design skills**.
 
 ---
 
@@ -31,7 +31,9 @@ This project performs basic mathematical operations using a custom-built calcula
 - ➖ Subtraction  
 - ✖️ Multiplication  
 - ➗ Division  
-- 🧠 Custom calculation logic (without eval)
+- 🧠 Custom calculation engine (without using eval)
+- 🧮 Operator precedence handling (BODMAS/BIDMAS logic)
+- 📊 Percentage calculations (e.g., 10 + 10% = 11)
 - 📱 Responsive layout  
 
 ---
@@ -42,14 +44,13 @@ This project performs basic mathematical operations using a custom-built calcula
 - Handling user input and calculations  
 - Building responsive layouts with CSS  
 - Structuring a real-world project
-- Building a custom calculation engine without using eval()
+- Implementing operator precedence manually
 - Validating mathematical expressions manually
 
 ---
 
 ## 🔮 Future Improvements
 
-- Support percentage in operations (e.g., `10 + 10%`)  
 - Improve UI/UX design  
 - Add full keyboard support  
 - Implement calculation history  
