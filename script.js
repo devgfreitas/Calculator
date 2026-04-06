@@ -18,6 +18,7 @@ document.addEventListener('keydown', function(event) {
     } else if(event.key == 'Backspace') {
         btnBack();
     } else if (event.key == 'Enter') {
+        console.log("ta indo");
         resolution();
     }
 })
