@@ -1,3 +1,11 @@
+:root {
+    --background: rgb(12, 0, 41);
+    --calculator: #000000;
+    --border: #00ccff;
+    --buttons: #ff0000;
+    --secundary: #09ff00;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +14,7 @@
 }
 
 body {
-    background-color: #FFF5EE;
+    background-color: var(--background);
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -24,12 +32,25 @@ body {
     font-family: 'Bungee', Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-weight: bold;
-    color: #8F9EE0;
+    background-image: linear-gradient(45deg, var(--border), var(--secundary), var(--buttons), var(--border), var(--secundary));
+    background-size: 500%;
+    background-clip: text;
+    color: transparent;
     margin-bottom: 25px;
+    animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
 }
 
 .calculadora-box {
-    background-color: #C0C0C0;
+    background-color: var(--calculator);
     width: 100%;
     max-width: 450px;
     height: 650px;
@@ -37,8 +58,8 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    border: 2px solid #000000;
-    box-shadow: -14px 15px 0 #C0C0C0, -16px 17px 0 #000000;
+    border: 2px solid var(--border);
+    box-shadow: -14px 15px 0 var(--calculator), -16px 17px 0 var(--border);
 }
 
 .visor {
@@ -51,15 +72,16 @@ body {
     height: 100px;
     border-radius: 25px;
     border: 0;
-    background-color: #FFFFFF;
+    background-color: var(--calculator);
     margin: 25px 0;
     text-align: end;
     font-weight: bold;
     font-size: 25px;
     padding: 10px;
-    border: 1px solid #000000;
-    border-top: 4px solid #000000;
-    border-right: 4px solid #000000;
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--border);
+    border-right: 4px solid var(--border);
+    color: var(--buttons);
 }
 
 .botoes {
@@ -78,30 +100,50 @@ body {
 .botoes button {
     height: 80px;
     border-radius: 25px;
-    background-color: #8F9EE0;
+    background-color: var(--calculator);
     font-size: 20px;
     font-weight: bold;
-    color: aliceblue;
-    border: 2px solid #000000;
+    color: var(--buttons);
+    border: 2px solid var(--buttons);
     cursor: pointer;
     transition: 0.1s;
-    box-shadow: -2px 3px 0 #8F9EE0, -4px 5px 0 #000000;
+    box-shadow: -2px 3px 0 var(--calculator), -4px 5px 0 var(--buttons);
 }
 
+.botoes .btn-equal {
+    color: var(--secundary);
+    border: 2px solid var(--secundary);
+    box-shadow: -2px 3px 0 var(--calculator), -4px 5px 0 var(--secundary);
+}
+
+.botoes .btn-equal:hover {
+    border-top: 4px solid var(--secundary);
+    border-right: 4px solid var(--secundary);
+    border-bottom: 2px solid var(--secundary);
+    border-left: 2px solid var(--secundary);
+    color: #06af00;
+}
+
+
 .botoes button:hover {
-    background-color: #7a8bcf;
-    border-top: 4px solid #000000;
-    border-right: 4px solid #000000;
-    border-bottom: 2px solid #000000;
-    border-left: 2px solid #000000;
-    color: #dadada;
+    background-color: rgb(32, 32, 32);
+    border-top: 4px solid var(--buttons);
+    border-right: 4px solid var(--buttons);
+    border-bottom: 2px solid var(--buttons);
+    border-left: 2px solid var(--buttons);
+    color: #b60000;
     box-shadow: none;
     transform: translateX(-4px);
 }
 
 
+
 /* RESPONSIVIDADE */
 @media (max-width: 550px) {
+    body {
+        height: 100dvh;
+    }
+
     .container h1 {
         font-size: 29px;
     }
