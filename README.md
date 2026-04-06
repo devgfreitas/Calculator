@@ -19,7 +19,7 @@
 
 ## 📸 Preview
 
-![Calculator Preview](./assets/calculator-image.png)
+![Calculator Preview](calculator-image.png)
 
 ---
 
