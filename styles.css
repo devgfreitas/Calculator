@@ -81,7 +81,10 @@ body {
     border: 1px solid var(--border);
     border-top: 4px solid var(--border);
     border-right: 4px solid var(--border);
-    color: var(--buttons);
+    color: var(--calculator);
+    background-image: linear-gradient(45deg, var(--border), var(--secundary), var(--buttons), var(--border), var(--secundary));
+    background-size: 550%;
+    animation: gradient 3s linear infinite;
 }
 
 .botoes {
