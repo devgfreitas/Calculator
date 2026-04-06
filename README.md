@@ -1,71 +1,67 @@
-# 🧮 Custom Logic Calculator
+# 🧮 Web Calculator
 
-<p align="center">
-  <img src="https://img.shields.io/badge/status-active-success?style=for-the-badge" />
-  <img src="https://img.shields.io/github/license/devgfreitas/Calculadora-Funcional?style=for-the-badge" />
-  <img src="https://img.shields.io/github/languages/top/devgfreitas/Calculadora-Funcional?style=for-the-badge" />
-</p>
+![Status](https://img.shields.io/badge/status-active-success)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Made With](https://img.shields.io/badge/made%20with-JavaScript-yellow)
+![Responsive](https://img.shields.io/badge/design-responsive-purple)
+![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen)
 
-A responsive web calculator built with **HTML, CSS, and JavaScript**.  
-This project performs basic mathematical operations using a custom-built calculation logic without relying on eval(), created to strengthen **programming logic**, **DOM manipulation**, and **responsive design skills**.
+> A modern and responsive calculator focused on usability, keyboard interaction, and clean UI.
 
 ---
 
 ## 🚀 Live Demo
 
-👉 https://devgfreitas.github.io/Calculator/
+👉 [Access the project](https://devgfreitas.github.io/Calculator)
 
 ---
 
 ## 📸 Preview
 
-<p align="center">
-  <img src="calculator-img.png" />
-</p>
+![Calculator Preview](calculator-image.png)
 
 ---
 
-## ⚙️ Features
+## ✨ Highlights
 
-- ➕ Addition  
-- ➖ Subtraction  
-- ✖️ Multiplication  
-- ➗ Division  
-- 🧠 Custom calculation engine (without using eval)
-- 🧮 Operator precedence handling (BODMAS/BIDMAS logic)
-- 📊 Percentage calculations (e.g., 10 + 10% = 11)
-- 📱 Responsive layout  
+- ⌨️ Full **keyboard support** (no need to click)
+- ⚡ Fast and smooth user interaction
+- 🎨 Clean and modern UI redesign
+- 📱 Fully responsive layout
+- 🧠 Focus on logic and DOM manipulation
 
 ---
 
-## 🧠 What I Learned
+## ⌨️ Keyboard Controls
 
-- DOM manipulation with JavaScript  
-- Handling user input and calculations  
-- Building responsive layouts with CSS  
-- Structuring a real-world project
-- Implementing operator precedence manually
-- Validating mathematical expressions manually
-
----
-
-## 🔮 Future Improvements
-
-- Improve UI/UX design  
-- Add full keyboard support  
-- Implement calculation history  
+| Key        | Action                |
+|------------|----------------------|
+| `0-9`      | Insert numbers       |
+| `+ - * / %`| Operators            |
+| `Enter`    | Calculate result     |
+| `Backspace`| Delete last input    |
 
 ---
 
-## 🛠️ Tech Stack
+## 🧠 Technologies
 
-- HTML5  
-- CSS3  
-- JavaScript  
+- HTML
+- CSS
+- JavaScript
 
 ---
 
-## 💻 How to Run Locally
+## 📚 What I Learned
+
+- Handling real-time user input
+- Working with `keydown` events
+- Improving UX through keyboard interaction
+- Structuring clean and maintainable logic
+
+---
+
+## 📦 Installation
 
 ```bash
-git clone https://github.com/devgfreitas/Calculator.git
+git clone https://github.com/your-username/your-repo.git
