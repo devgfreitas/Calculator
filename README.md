@@ -20,7 +20,7 @@ This project performs basic mathematical operations using a custom-built calcula
 ## 📸 Preview
 
 <p align="center">
-  <img src="calculator-img.png" />
+  <img src="calculator-image.png" />
 </p>
 
 ---
