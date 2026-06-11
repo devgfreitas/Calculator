@@ -1,4 +1,8 @@
 let visor = document.getElementById('visor');
+let header = document.querySelector('header');
+let buttonconfig = document.getElementById('button-config');
+let nav = document.getElementById('nav');
+let active = false;
 
 function digit(valor) {
     visor.value += valor;
@@ -127,4 +131,22 @@ function resolution() {
         visor.value = contacorreta[0];  
     }
                
+}
+
+function buttonclick() {
+    if(active == false) {
+        nav.style.display = 'flex';
+        setTimeout(()=>{
+            buttonconfig.style.transform = 'rotate(45deg)';
+            nav.style.transform = 'scaleY(100%)';
+            active = true;
+        }, 50)
+    } else {
+        buttonconfig.style.transform = 'rotate(-45deg)';
+        nav.style.transform = 'scaleY(0%)';
+        setTimeout(()=>{
+            nav.style.display = 'none';
+            active = false;
+        }, 1000)
+    }
 }
