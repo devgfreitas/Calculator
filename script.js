@@ -1,5 +1,6 @@
 let visor = document.getElementById('visor');
-let header = document.querySelector('header');
+let buttonscalculator = document.querySelector('.botoes');
+let header = document.querySelector('.header');
 let buttonconfig = document.getElementById('button-config');
 let nav = document.getElementById('nav');
 let active = false;
@@ -135,6 +136,8 @@ function resolution() {
 
 function buttonclick() {
     if(active == false) {
+        header.style.zIndex = '2';
+        buttonscalculator.style.zIndex = '1';
         nav.style.display = 'flex';
         setTimeout(()=>{
             buttonconfig.style.transform = 'rotate(45deg)';
@@ -146,6 +149,7 @@ function buttonclick() {
         nav.style.transform = 'scaleY(0%)';
         setTimeout(()=>{
             nav.style.display = 'none';
+            header.style.zIndex = '1';
             active = false;
         }, 1000)
     }

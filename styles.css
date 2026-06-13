@@ -25,6 +25,7 @@ body {
     height: 100%;
     right: 10px;
     top: 10px;
+    z-index: 1;
 }
 
 #button-config {
@@ -164,6 +165,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
+    z-index: 1;
 }
 
 .botao-zero {
@@ -218,6 +220,29 @@ body {
         height: 100dvh;
     }
 
+    #button-config {
+        width: 90px;
+        height: 90px;
+    }
+
+    .nav {
+        max-height: 300px;
+    }
+
+    .navlist {
+        gap: 10px;
+    }
+
+    .navlist > li > button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .navlist > li > button > img {
+        width: 30px;
+        height: 30px;
+    }
+
     .container h1 {
         font-size: 29px;
     }
@@ -243,6 +268,29 @@ body {
 }
 
 @media (max-width: 400px) {
+    #button-config {
+        width: 70px;
+        height: 70px;
+    }
+
+    .nav {
+        max-height: 250px;
+    }
+
+    .navlist {
+        gap: 10px;
+    }
+
+    .navlist > li > button {
+        width: 47px;
+        height: 47px;
+    }
+
+    .navlist > li > button > img {
+        width: 22px;
+        height: 22px;
+    }
+
     .container h1 {
         font-size: 25px;
     }
