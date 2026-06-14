@@ -1,8 +1,10 @@
 let visor = document.getElementById('visor');
+let basecalculator = document.querySelector('.calculadora-box');
 let buttonscalculator = document.querySelector('.botoes');
 let header = document.querySelector('.header');
 let buttonconfig = document.getElementById('button-config');
 let nav = document.getElementById('nav');
+let open = false;
 let active = false;
 
 function digit(valor) {
@@ -152,5 +154,37 @@ function buttonclick() {
             header.style.zIndex = '1';
             active = false;
         }, 1000)
+    }
+}
+
+function openPopUp(numberclass) {
+    if(open == false) {
+        const popup = document.querySelector(`.pop${numberclass}`);
+        basecalculator.style.transform = 'translateX(-270%)';
+        setTimeout(() => {
+           basecalculator.style.display = "none"; 
+        }, 1000)
+        setTimeout(() => {
+            console.log('popup reconhecido!');
+        }, 2000)
+        popup.style.display = 'flex';       
+        setTimeout(() => { 
+           popup.style.transform = 'translateX(0%)';      
+        }, 1000)
+        open = true;
+    } else {
+        const popup = document.querySelector(`.pop${numberclass}`);
+        popup.style.transform = 'translateX(210%)';
+        setTimeout(() => {
+            popup.style.display = 'none';
+        }, 1000)
+        setTimeout(() => {
+            console.log('popup reconhecido!');
+        }, 2000)
+           basecalculator.style.display = "flex";     
+        setTimeout(() => { 
+            basecalculator.style.transform = 'translateX(0%)';     
+        }, 1000)
+        open = false;
     }
 }

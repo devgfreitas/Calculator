@@ -15,10 +15,10 @@
         <button id="button-config" onclick="buttonclick()"><img src="img/config-azul.png" alt="botão de configurações"></button>
         <nav class="nav" id="nav">
             <ul class="navlist">
-                <li><button><img src="img/historico-azul.png" alt="Histórico"></button></li>
-                <li><button><img src="img/modelo-azul.png" alt="Modelos"></button></li>
-                <li><button><img src="img/creditos-azul.png" alt="Créditos"></button></li>
-                <li><button><img src="img/preferencias-azul.png" alt="Preferências"></button></li>
+                <li><button onclick="openPopUp(1)"><img src="img/historico-azul.png" alt="Histórico"></button></li>
+                <li><button onclick="openPopUp(2)"><img src="img/modelo-azul.png" alt="Modelos"></button></li>
+                <li><button onclick="openPopUp(3)"><img src="img/creditos-azul.png" alt="Créditos"></button></li>
+                <li><button onclick="openPopUp(4)"><img src="img/preferencias-azul.png" alt="Preferências"></button></li>
             </ul>
         </nav>
     </header>
@@ -54,6 +54,10 @@
             </div>
         </section>
 
+        <section class="popup pop1">
+            <h2>Histórico</h2>
+            <p>Em Breve... 🚀</p>
+        </section>
     </main>
 
     <script src="script.js"></script>
